@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   background: linear-gradient(-45deg, #000428,#003a6d, #1aa383 ,#75a114);
+   background-size: 350% 350%;
+   animation: gradient 10s ease infinite;
+   height: 90vh;
+}
+@keyframes gradient {
+   0% {
+       background-position: 0% 50%;
+   }
+   50% {
+       background-position: 100% 50%;
+   }
+   100% {
+       background-position: 0% 50%;
+   }
+}
+img{
+   height: 7rem;
+   width: 7rem;
+   position: absolute;
+   left: 2rem;
+   animation:mymove 10s ease infinite;
+}
+@keyframes mymove
+{
+  0% {
+     top:0px;
+  }
+  
+  25% {
+     top:2rem;
+  }
+  75% {
+   top:-2rem;
+}
+  100% {
+   top:0px;
+}
+
+}
+.right{
+   height: 7rem;
+   width: 7rem;
+   right: 0;
+   margin-left: 74rem;
+   animation:mymove 10s ease infinite;
+}
+@keyframes mymove
+{
+  0% {
+     top:0px;
+  }
+  
+  25% {
+     top:2rem;
+  }
+  75% {
+   top:-2rem;
+}
+  100% {
+   top:0px;
+}
+
+}
+
+.input{
+    text-align: center;
+    margin-top: 3rem;
+
+} 
+.inputvalue{
+    height: 2.4rem;
+    width: 19rem;
+    border: none;
+    border-radius: 0.2rem;
+    padding-left: 0.2rem;
+    background-color: black;
+    color: white;
+
+}
+.btn{
+    height: 2.4rem;
+    width: 2.4rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #20264d;
+    border: none;
+    border-radius: 0.2rem;
+    margin-left: 0.6rem;
+}
+.btn:hover{
+   background-color: #041479;
+
+
+}
+.display{
+    
+   color: white;
+   background-color: rgba(19, 18, 18, 0.281);
+   width: 33rem;
+   margin-left: 27rem;
+   margin-top: 3rem;
+   height: 22rem;
+   border-radius: 0.5rem;
+   position: fixed;
+
+}
+.today{
+   padding-bottom: 1.5rem;
+    padding-left: 11rem;
+    font-size: 4rem;
+
+}
+
+.temp{
+   font-size: 7rem;
+   font-weight: bold;
+   background: linear-gradient(to bottom right,#ebebeb, #1994c5, #01233b);
+   background-clip: text;
+ -webkit-background-clip: text;
+ -moz-background-clip: text;
+ -webkit-text-fill-color: transparent;
+}
+.text{
+   display: flex;
+   padding-left: 6rem;
+}
+.name{
+   padding-top: 2.7rem;
+   padding-left: 2rem;
+   font-size: 2.8rem;
+
+}
+.desc{
+   position: absolute;
+   top: 11.5rem;
+   padding-left: 17rem;
+}
+@media screen and (min-width: 260px) and (max-width:920px)  {
+   body{
+       background-size: 600% 600%;
+       height: 85vh;
+    }
+     @keyframes gradient {
+   50% {
+       background-position: 50% 50%;
+   }
+}
+.input{
+   text-align: center;
+   margin-top: 8rem;
+} 
+.inputvalue{
+   margin-left: 0.5rem;
+   height: 4rem;
+   width: 15rem;
+   font-size: 1.5rem;
+   padding-left: 1.5rem;
+}
+.btn{  
+   height: 4rem;
+   width: 4rem;
+   font-size: 2rem;
+}
+.right{
+   display: none;
+}
+img{
+
+   left: 9rem;
+   margin-left: auto;
+   margin-right: auto;
+}
+@keyframes mymove
+{
+  0% {
+     top:0px;
+  }
+  
+  25% {
+     top:1rem;
+  }
+  75% {
+   top:-1rem;
+}
+  100% {
+   top:0px;
+}
+}
+.display{
+   width: 100%;
+   margin-left: 0rem;
+   height: 92rem;
+   border-radius: 4rem;
+}
+.today{
+   padding-bottom: 1.5rem;
+    padding-left: 0rem;
+    text-align: center;
+    font-size: 4.2rem;
+
+}
+
+.temp{
+   font-size: 11rem;
+   text-align: center;
+}
+.text{
+   display: block;
+   padding-left: 0rem;
+   text-align: center;
+
+}
+.name{
+   padding-top: 1rem;
+   padding-left: 0rem;
+   font-size: 3rem;
+
+}
+.desc{
+   position: relative;
+   top: 0.5rem;
+   padding-left: 0rem;
+   text-align: center;
+   font-size: 2rem;
+}
+}
