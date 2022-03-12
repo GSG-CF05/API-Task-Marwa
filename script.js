@@ -21,4 +21,4 @@ let button = document.querySelector('.btn')
        desc.innerHTML =descvalue;
 })
 .catch(error => alert("Wrong city name"))
-  })
+})
